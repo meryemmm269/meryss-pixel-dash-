@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Merii’s Pixel Dash - Ana Menü</title>
+<style>
+  body {
+    margin: 0;
+    background: #444; /* Gri soluk arka plan */
+    font-family: 'Press Start 2P', cursive, monospace;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    user-select: none;
+  }
+  .menu {
+    background: #222;
+    border: 4px solid #f28ab2; /* Pembe çerçeve */
+    padding: 30px 50px;
+    border-radius: 12px;
+    text-align: center;
+    width: 320px;
+    box-shadow: 0 0 15px #f28ab2aa;
+  }
+  h1 {
+    font-size: 22px;
+    margin-bottom: 24px;
+    color: #f28ab2;
+  }
+  button {
+    font-family: inherit;
+    font-size: 14px;
+    background: transparent;
+    border: 2px solid #f28ab2;
+    color: #f28ab2;
+    padding: 12px 0;
+    width: 100%;
+    margin: 12px 0;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  button:hover, button:focus {
+    background: #f28ab2;
+    color: #222;
+    outline: none;
+  }
+  .footer {
+    margin-top: 18px;
+    font-size: 11px;
+    color: #bbb;
+  }
+</style>
+</head>
+<body>
+  <div class="menu">
+    <h1>Merii’s Pixel Dash</h1>
+    <button id="newGameBtn">▶️ Yeni Oyun</button>
+    <button id="continueBtn" disabled>🔁 Devam Et</button>
+    <button id="galleryBtn">🎨 Renk Odası</button>
+    <button id="settingsBtn">⚙️ Ayarlar</button>
+    <button id="exitBtn">❌ Çıkış</button>
+    <div class="footer">© 2025 Merii’s Pixel Dash</div>
+  </div>
+
+<script>
+  // Buton eventleri - şimdilik sadece alert
+  document.getElementById('newGameBtn').onclick = () => alert('Yeni Oyun Başlıyor! (Henüz yapılmadı 😎)');
+  document.getElementById('continueBtn').onclick = () => alert('Devam Et (Kayıt yok şimdilik)');
+  document.getElementById('galleryBtn').onclick = () => alert('Renk Odası (Henüz boş)');
+  document.getElementById('settingsBtn').onclick = () => alert('Ayarlar (Şimdilik kapalı)');
+  document.getElementById('exitBtn').onclick = () => alert('Oyundan çıkış yapılamıyor, ama gerçekte kapatabilirsin!');
+</script>
+</body>
+</html>
